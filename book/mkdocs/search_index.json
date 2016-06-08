@@ -97,7 +97,7 @@
         },
         {
             "location": "/content/command/im-config/",
-            "text": "im-config command\n\n\n\u89c0\u770b help\n\n\n\u57f7\u884c\n\n\n$ im-config --help\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ im-config -h\n\n\n\n\n\u986f\u793a\n\n\nInput Method Configuration (im-config, ver. 0.29-1ubuntu12)\n(c) Osamu Aoki \nosamu@debian.org\n, GPL-2+\nSee im-config(8), /usr/share/doc/im-config/README.Debian.gz.\n\n\n\n\n\u8a3b: \u5176\u5be6\u4e26\u6c92\u6709\u4e0a\u9762\u5169\u500b\u53c3\u6578\u300c-h\u300d\u548c\u300c--help\u300d\uff0c\u8acb\u53c3\u8003\u4e0b\u9762\u7684 manpage\n\n\n\u89c0\u770b manpage\n\n\n\u57f7\u884c\n\n\n$ man im-config\n\n\n\n\n\u6703\u770b\u5230\n\u8aaa\u660e\n\n\n\u67e5\u8a62 im-config \u653e\u5728\u90a3\u500b\u4f4d\u7f6e\n\n\n\u57f7\u884c\n\n\n$ whereis im-config\n\n\n\n\n\u986f\u793a\n\n\nim-config: /usr/bin/im-config /usr/share/im-config /usr/share/man/man8/im-config.8.gz\n\n\n\n\n\u67e5\u8a62 im-config \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6\n\n\n\u57f7\u884c\n\n\n$ dpkg -S /usr/bin/im-config\n\n\n\n\n\u986f\u793a\n\n\nim-config: /usr/bin/im-config\n\n\n\n\n\u8868\u793a\u300c/usr/bin/im-config\u300d\u662f\u5c6c\u65bc\u300c\nim-config\n\u300d\u9019\u500b\u5957\u4ef6\u3002",
+            "text": "im-config command\n\n\n\u89c0\u770b help\n\n\n\u57f7\u884c\n\n\n$ im-config --help\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ im-config -h\n\n\n\n\n\u986f\u793a\n\n\nInput Method Configuration (im-config, ver. 0.29-1ubuntu12)\n(c) Osamu Aoki \nosamu@debian.org\n, GPL-2+\nSee im-config(8), /usr/share/doc/im-config/README.Debian.gz.\n\n\n\n\n\u8a3b: \u5176\u5be6\u4e26\u6c92\u6709\u4e0a\u9762\u5169\u500b\u53c3\u6578\u300c-h\u300d\u548c\u300c--help\u300d\uff0c\u8acb\u53c3\u8003\u4e0b\u9762\u7684 manpage\n\n\n\u89c0\u770b manpage\n\n\n\u57f7\u884c\n\n\n$ man im-config\n\n\n\n\n\u6703\u770b\u5230\n\u8aaa\u660e\n\n\n\u67e5\u8a62 im-config \u653e\u5728\u90a3\u500b\u4f4d\u7f6e\n\n\n\u57f7\u884c\n\n\n$ whereis im-config\n\n\n\n\n\u986f\u793a\n\n\nim-config: /usr/bin/im-config /usr/share/im-config /usr/share/man/man8/im-config.8.gz\n\n\n\n\n\u67e5\u8a62 im-config \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6\n\n\n\u57f7\u884c\n\n\n$ dpkg -S /usr/bin/im-config\n\n\n\n\n\u986f\u793a\n\n\nim-config: /usr/bin/im-config\n\n\n\n\n\u8868\u793a\u300c/usr/bin/im-config\u300d\u662f\u5c6c\u65bc\u300c\nim-config\n\u300d\u9019\u500b\u5957\u4ef6\u3002\n\n\n\u4f7f\u7528\u7bc4\u4f8b\n\n\n\u986f\u793a\u76ee\u524d\u6709\u90a3\u4e9b\u8f38\u5165\u6cd5\u6846\u67b6\n\n\n\u57f7\u884c\n\n\n$ im-config -l\n\n\n\n\n\u986f\u793a\n\n\nfcitx maliit xim\n\n\n\n\n\u986f\u793a\u8f38\u5165\u6cd5\u6846\u67b6\u7684\u8cc7\u8a0a\n\n\n\u57f7\u884c\n\n\n$ im-config -o fcitx\n\n\n\n\n\u986f\u793a\n\n\nFlexible Input Method Framework (fcitx)\n * Required for all: fcitx\n * Language specific input conversion support:\n   * Simplified Chinese: fcitx-pinyin or fcitx-sunpinyin or fcitx-googlepinyin\n   * Generic keyboard translation table: fcitx-table* packages\n * Application platform support:\n   * GNOME/GTK+: fcitx-frontend-gtk2 and fcitx-frontend-gtk3 (both)\n   * KDE/Qt4: fcitx-frontend-qt4\n\n\n\n\n\u8a2d\u5b9a\u9810\u5b9a\u4f7f\u7528\u8f38\u5165\u6cd5\u6846\u67b6\n\n\n\u57f7\u884c\n\n\n$ im-config -n fcitx\n\n\n\n\n\u6703\u5beb\u5165\u300c~/.xinputrc\u300d\u9019\u500b\u6a94\n\n\n\u57f7\u884c\n\n\n$ cat ~/.xinputrc\n\n\n\n\n\u986f\u793a\n\n\n# im-config(8) generated on Wed, 08 Jun 2016 08:38:48 +0800\nrun_im fcitx\n# im-config signature: 358acb003c95fc3a83e18c2a3a93799a  -\n\n\n\n\n\u6ce8\u610f:\n\n\n\u82e5\u662f\u624b\u52d5\u6539\u4e86\u300c~/.xinputrc\u300d\u9019\u500b\u6a94\uff0c\n\u57f7\u884c\u300cim-config -n fcitx\u300d\n\u6703\u986f\u793a\u300cE: Configuration in /home/user/.xinputrc is manually managed. Doing nothing.\u300d\n\u53ea\u8981\u628a\u300c~/.xinputrc\u300d\u9019\u500b\u6a94\u522a\u9664\uff0c\u5c31\u53ef\u4ee5\u518d\u6b21\u57f7\u884c\u300cim-config -n fcitx\u300d\u3002\n\n\n\n\n\u986f\u793a\u76ee\u524d\u7684\u8a2d\u5b9a\n\n\n\u57f7\u884c\n\n\n$ im-config -m\n\n\n\n\n\u986f\u793a\n\n\ndefault\nfcitx\nfcitx\n\nfcitx\n\n\n\n\n\u5c0d\u7167\u300cman \nim-config\n\u300d\u7684\u8aaa\u660e\u3002\n\n\n-m      List configuration values to STDOUT:\n        \u00b7   active configuration (system)\n        \u00b7   active configuration (user)\n        \u00b7   automatic configuration for the current locale\n        \u00b7   override configuration for the current locale\n        \u00b7   automatic configuration for most locales\n        If the active configuration is custom, the user made a custom configuration and  im-config  should  not\n        change it.",
             "title": "im-config"
         },
         {
@@ -124,6 +124,31 @@
             "location": "/content/command/im-config/#im-config_1",
             "text": "\u57f7\u884c  $ dpkg -S /usr/bin/im-config  \u986f\u793a  im-config: /usr/bin/im-config  \u8868\u793a\u300c/usr/bin/im-config\u300d\u662f\u5c6c\u65bc\u300c im-config \u300d\u9019\u500b\u5957\u4ef6\u3002",
             "title": "\u67e5\u8a62 im-config \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6"
+        },
+        {
+            "location": "/content/command/im-config/#_1",
+            "text": "",
+            "title": "\u4f7f\u7528\u7bc4\u4f8b"
+        },
+        {
+            "location": "/content/command/im-config/#_2",
+            "text": "\u57f7\u884c  $ im-config -l  \u986f\u793a  fcitx maliit xim",
+            "title": "\u986f\u793a\u76ee\u524d\u6709\u90a3\u4e9b\u8f38\u5165\u6cd5\u6846\u67b6"
+        },
+        {
+            "location": "/content/command/im-config/#_3",
+            "text": "\u57f7\u884c  $ im-config -o fcitx  \u986f\u793a  Flexible Input Method Framework (fcitx)\n * Required for all: fcitx\n * Language specific input conversion support:\n   * Simplified Chinese: fcitx-pinyin or fcitx-sunpinyin or fcitx-googlepinyin\n   * Generic keyboard translation table: fcitx-table* packages\n * Application platform support:\n   * GNOME/GTK+: fcitx-frontend-gtk2 and fcitx-frontend-gtk3 (both)\n   * KDE/Qt4: fcitx-frontend-qt4",
+            "title": "\u986f\u793a\u8f38\u5165\u6cd5\u6846\u67b6\u7684\u8cc7\u8a0a"
+        },
+        {
+            "location": "/content/command/im-config/#_4",
+            "text": "\u57f7\u884c  $ im-config -n fcitx  \u6703\u5beb\u5165\u300c~/.xinputrc\u300d\u9019\u500b\u6a94  \u57f7\u884c  $ cat ~/.xinputrc  \u986f\u793a  # im-config(8) generated on Wed, 08 Jun 2016 08:38:48 +0800\nrun_im fcitx\n# im-config signature: 358acb003c95fc3a83e18c2a3a93799a  -  \u6ce8\u610f:  \u82e5\u662f\u624b\u52d5\u6539\u4e86\u300c~/.xinputrc\u300d\u9019\u500b\u6a94\uff0c\n\u57f7\u884c\u300cim-config -n fcitx\u300d\n\u6703\u986f\u793a\u300cE: Configuration in /home/user/.xinputrc is manually managed. Doing nothing.\u300d\n\u53ea\u8981\u628a\u300c~/.xinputrc\u300d\u9019\u500b\u6a94\u522a\u9664\uff0c\u5c31\u53ef\u4ee5\u518d\u6b21\u57f7\u884c\u300cim-config -n fcitx\u300d\u3002",
+            "title": "\u8a2d\u5b9a\u9810\u5b9a\u4f7f\u7528\u8f38\u5165\u6cd5\u6846\u67b6"
+        },
+        {
+            "location": "/content/command/im-config/#_5",
+            "text": "\u57f7\u884c  $ im-config -m  \u986f\u793a  default\nfcitx\nfcitx\n\nfcitx  \u5c0d\u7167\u300cman  im-config \u300d\u7684\u8aaa\u660e\u3002  -m      List configuration values to STDOUT:\n        \u00b7   active configuration (system)\n        \u00b7   active configuration (user)\n        \u00b7   automatic configuration for the current locale\n        \u00b7   override configuration for the current locale\n        \u00b7   automatic configuration for most locales\n        If the active configuration is custom, the user made a custom configuration and  im-config  should  not\n        change it.",
+            "title": "\u986f\u793a\u76ee\u524d\u7684\u8a2d\u5b9a"
         },
         {
             "location": "/content/trace/xubuntu.16.04/",

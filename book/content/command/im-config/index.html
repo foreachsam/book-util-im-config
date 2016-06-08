@@ -257,6 +257,14 @@
 			</div>
 		</li>
 		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="使用範例" href="#_1" >
+                	使用範例
+				</a>
+			</div>
+		</li>
+		
 	</ul>
 	 
 </li>
@@ -352,6 +360,77 @@ See im-config(8), /usr/share/doc/im-config/README.Debian.gz.</code></pre>
 
 
 <p>表示「/usr/bin/im-config」是屬於「<a href="http://packages.ubuntu.com/xenial/im-config">im-config</a>」這個套件。</p>
+<h2 id="_1">使用範例</h2>
+<h3 id="_2">顯示目前有那些輸入法框架</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ im-config -l</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>fcitx maliit xim</code></pre>
+
+
+<h3 id="_3">顯示輸入法框架的資訊</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ im-config -o fcitx</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Flexible Input Method Framework (fcitx)
+ * Required for all: fcitx
+ * Language specific input conversion support:
+   * Simplified Chinese: fcitx-pinyin or fcitx-sunpinyin or fcitx-googlepinyin
+   * Generic keyboard translation table: fcitx-table* packages
+ * Application platform support:
+   * GNOME/GTK+: fcitx-frontend-gtk2 and fcitx-frontend-gtk3 (both)
+   * KDE/Qt4: fcitx-frontend-qt4</code></pre>
+
+
+<h3 id="_4">設定預定使用輸入法框架</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ im-config -n fcitx</code></pre>
+
+
+<p>會寫入「~/.xinputrc」這個檔</p>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ cat ~/.xinputrc</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code># im-config(8) generated on Wed, 08 Jun 2016 08:38:48 +0800
+run_im fcitx
+# im-config signature: 358acb003c95fc3a83e18c2a3a93799a  -</code></pre>
+
+
+<p>注意:</p>
+<pre class="code"><code>若是手動改了「~/.xinputrc」這個檔，
+執行「im-config -n fcitx」
+會顯示「E: Configuration in /home/user/.xinputrc is manually managed. Doing nothing.」
+只要把「~/.xinputrc」這個檔刪除，就可以再次執行「im-config -n fcitx」。</code></pre>
+
+
+<h3 id="_5">顯示目前的設定</h3>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ im-config -m</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>default
+fcitx
+fcitx
+
+fcitx</code></pre>
+
+
+<p>對照「man <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/im-config.8.html">im-config</a>」的說明。</p>
+<pre class="code"><code>-m      List configuration values to STDOUT:
+        ·   active configuration (system)
+        ·   active configuration (user)
+        ·   automatic configuration for the current locale
+        ·   override configuration for the current locale
+        ·   automatic configuration for most locales
+        If the active configuration is custom, the user made a custom configuration and  im-config  should  not
+        change it.</code></pre>
 				<aside class="copyright" role="note">
 					 Copyright (c) foreachsam &ndash;  Documentation built with
 					<a href="http://www.mkdocs.org" target="_blank">MkDocs</a> using the
